@@ -2,7 +2,7 @@
 
       <section class="resume-section d-flex flex-column" id="about">
         <div class="row justify-content-center flex-column mb-3" style="align-items: center;">
-              <div class="col-6 col-md-4">
+              <div class="col-8 col-md-4">
                   <img class="img-thumbnail rounded-circle" src="{{ .Site.Params.profileImage | relURL }}" alt="" style="align-self: center;">
               </div>
           <!-- <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ .Site.Params.profileImage | relURL }}" alt=""> -->
@@ -14,11 +14,12 @@
               <h1 class="mb-3">{{ .Site.Params.firstName }}
                 <span class="text-primary">{{ .Site.Params.lastName }}</span>
               </h1>
-              <div class="subheading mb-5">  
-                <a href="mailto:{{ .Site.Params.email }}"><span class="fa-solid fa-envelope"></span></a>  ·  
+                          <div class="subheading mb-2">{{ .Site.Params.address}}</div>
+              <div class="subheading mb-5 icon-container">  
+                <a href="mailto:{{ .Site.Params.email }}"><span class="fa-solid fa-envelope fa-lg"></span></a>    
                           {{ if .Site.Params.phone }}
-                          <a href="https://wa.me/{{ replace .Site.Params.phone " " "" | replaceRE "^00" "" }}"><span class="fa-brands fa-whatsapp"></span></a>  ·  
-                          <a href="tell:{{ .Site.Params.phone }}"><i class="fa-solid fa-phone"></i></a>
+                          <a href="https://wa.me/{{ replace .Site.Params.phone " " "" | replaceRE "^00" "" }}"><span class="fa-brands fa-whatsapp fa-lg"></span></a>    
+                          <a href="tell:{{ .Site.Params.phone }}"><i class="fa-solid fa-phone fa-lg"></i></a>
                           {{ end }}
                           
               </div>

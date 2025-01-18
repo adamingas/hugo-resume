@@ -1,0 +1,12 @@
+
+
+<section class="resume-section d-flex flex-column" id="services">
+    <div class="my-auto" id="services-content">
+        <h2 class="mb-5">{{ i18n "approach" }}</h2>
+            <ul class="list-unstyled"> <!-- Unordered list with no default styling -->
+            {{ range $.Data.approach }}
+                <li class="mb-2">{{ . }}</li> <!-- Render each string as a list item -->
+            {{ end }}
+        </ul>
+    </div>
+</section>

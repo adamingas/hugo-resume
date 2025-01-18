@@ -119,6 +119,7 @@ div.skills-heading{
     padding-left: 1em;
 }
 
+
 /* Fix responsive width for blog posts */
 .my-auto {
 	width: 100%
@@ -150,3 +151,4 @@ div.skills-heading{
     img.qrcode {
       max-width: 300px !important;
     }
+
