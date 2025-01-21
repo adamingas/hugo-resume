@@ -19,7 +19,7 @@
                 <a href="mailto:{{ .Site.Params.email }}"><span class="fa-solid fa-envelope fa-lg"></span></a>    
                           {{ if .Site.Params.phone }}
                           <a href="https://wa.me/{{ replace .Site.Params.phone " " "" | replaceRE "^00" "" }}"><span class="fa-brands fa-whatsapp fa-lg"></span></a>    
-                          <a href="tell:{{ .Site.Params.phone }}"><i class="fa-solid fa-phone fa-lg"></i></a>
+                          <a href="tel:{{ replace .Site.Params.phone " " "" }}"><i class="fa-solid fa-phone fa-lg"></i></a>
                           {{ end }}
                           
               </div>
